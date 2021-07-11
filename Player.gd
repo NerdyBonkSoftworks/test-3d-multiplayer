@@ -15,11 +15,11 @@ func _physics_process(delta):
 	
 	if (Input.is_action_pressed("ui_left")):
 		direction -= transform.basis.x
-	elif (Input.is_action_pressed("ui_right")):
+	if (Input.is_action_pressed("ui_right")):
 		direction += transform.basis.x
-	elif (Input.is_action_pressed("ui_up")):
+	if (Input.is_action_pressed("ui_up")):
 		direction -= transform.basis.z
-	elif (Input.is_action_pressed("ui_down")):
+	if (Input.is_action_pressed("ui_down")):
 		direction += transform.basis.z	
 	direction = direction.normalized()
 	
