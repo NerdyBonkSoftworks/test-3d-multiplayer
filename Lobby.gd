@@ -18,6 +18,6 @@ func _on_ButtonHost_pressed():
 
 func _on_ButtonJoin_pressed():
 	var net = NetworkedMultiplayerENet.new()
-	net.create_client("127.0.0.1", 6969) #26.4.68.43
+	net.create_client("25.102.180.156", 6969) #26.4.68.43
 	get_tree().set_network_peer(net)
 	print("Now it's joining")
